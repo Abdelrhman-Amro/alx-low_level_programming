@@ -13,10 +13,10 @@ int main(void)
 {
 	int i = 48;
 
-	while (i < 57)
+	while (true)
 	{
 		putchar(i);
-		if (i == 58)
+		if (i == 57)
 		{
 			putchar('$');
 			break;
