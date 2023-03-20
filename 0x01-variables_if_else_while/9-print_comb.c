@@ -17,12 +17,8 @@ int main(void)
 	{
 		putchar(i);
 		if (i == 57)
-		{
-			x = 36;
-		}
-		putchar(x);
-		if (i == 57)
 			break;
+		putchar(x);
 		putchar(' ');
 		i++;
 	}
