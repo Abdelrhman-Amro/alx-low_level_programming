@@ -16,11 +16,14 @@ int main(void)
 	while (i < 57)
 	{
 		putchar(i);
+		if (i == 58)
+		{
+			putchar('$');
+			break;
+		}
 		putchar(',');
 		i++;
 	}
-	putchar(57);
-	putchar('$');
 	putchar('\n');
 
 	return (0);
