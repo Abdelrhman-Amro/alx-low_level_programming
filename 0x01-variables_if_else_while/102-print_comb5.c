@@ -12,29 +12,33 @@ int main(void)
 {
 	int x = 48, i, j, k, l;
 
-	for (i = 0 + x; i <= 9 + x; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j <= 9 + x; j++)
+		for (j = 0; j <= 9; j++)
 		{
-			for (k = i; k <= 9 + x; k++)
+			for (k = i; k <= 9; k++)
 			{
-				for (l = j + 1; l <= 9 + x; l++)
+				l = 0;
+				if (k == i)
+					l = j + 1;
+				for (; l <= 9; l++)
 				{
-					putchar(i);
-					putchar(j);
+					putchar(i + x);
+					putchar(j + x);
 					putchar(' ');
-					putchar(k);
-					putchar(l);
+					putchar(k + x);
+					putchar(l + x);
 					if (i == 9 && j == 8)
+					{
+						++l;
 						break;
+					}
 					putchar(',');
 					putchar(' ');
 				}
 			}
-
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
