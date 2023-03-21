@@ -13,10 +13,10 @@ void print_to_98(int n)
 
 	int Num;
 
-	Num = 1;
-
 	if (n > 98)
 		Num = -1;
+	else
+		Num = 1;
 
 	while (n != 98)
 	{
