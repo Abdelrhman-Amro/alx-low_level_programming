@@ -8,6 +8,14 @@
  * Return: Always 0
 */
 
+/**
+ * print_alphabet(void) - print alphabet
+ *
+ * Description: print alphabet
+ *
+ * Return: none
+*/
+
 void print_alphabet(void)
 {
 	char i;
