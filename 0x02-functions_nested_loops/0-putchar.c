@@ -3,7 +3,8 @@
 /**
  * main - entery point
  *
- * Description: print "_putchar"
+ * Description: print _putchar
+ * 
  *
  * Return: on success 1
 */
