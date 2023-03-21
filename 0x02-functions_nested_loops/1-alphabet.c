@@ -3,6 +3,8 @@
 /**
  * print_alphabet(void) - print alphabet
  *
+ * Description: print in lowercase
+ *
  * Return: Always 0
 */
 
