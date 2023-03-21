@@ -3,17 +3,11 @@
 /**
  * main - entry point
  *
+ * print_alphabet(void) - print alphabet
+ *
  * Description: print_alphabet
  *
  * Return: Always 0
-*/
-
-/**
- * print_alphabet(void) - print alphabet
- *
- * Description: print alphabet
- *
- * Return: none
 */
 
 void print_alphabet(void)
