@@ -1,12 +1,6 @@
 #include "main.h"
 
 /**
- * main - entery point
- *
- * Description: print _putchar
- *
- * Return: on success 1
- *
  * print_alphabet - print alphabet
  *
  * Return: Always 0
