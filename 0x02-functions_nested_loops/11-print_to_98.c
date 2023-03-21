@@ -13,7 +13,9 @@ void print_to_98(int n)
 {
 	printf("%d", n);
 
-	int x = 1;
+	int x;
+
+	x = 1
 
 	if (n > 98)
 		x = -1;
