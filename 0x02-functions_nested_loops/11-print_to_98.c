@@ -8,9 +8,10 @@
 
 void print_to_98(int n)
 {
+	int x;
+
 	printf("%d", n);
 
-	int x;
 
 	if (n > 98)
 		x = -1;
