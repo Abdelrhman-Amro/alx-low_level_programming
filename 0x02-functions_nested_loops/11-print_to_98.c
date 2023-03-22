@@ -2,25 +2,25 @@
 #include "main.h"
 
 /**
- * print_to_98 - from n to 98
+ *print_to_98 - from n to 98
  *
- * @n: number
+ *@n: number
 */
 
 void print_to_98(int n)
 {
 	printf("%d", n);
 
-	int Num;
+	int x;
 
 	if (n > 98)
-		Num = -1;
+		x = -1;
 	else
-		Num = 1;
+		x = 1;
 
 	while (n != 98)
 	{
-		n += Num;
+		n += x;
 		printf(", %d", n);
 	}
 
