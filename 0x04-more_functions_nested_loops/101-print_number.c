@@ -12,6 +12,13 @@ void print_number(int n)
 
 	x = n, cnt = 1;
 
+	if (n < 0)
+	{
+		x = -n;
+	}
+	else
+		x = n;
+
 	while (x > 9)
 	{
 		cnt *= 10;
