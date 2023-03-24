@@ -28,7 +28,7 @@ void print_number(int n)
 	}
 	if (x < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		cnt = -cnt;
 	}
 
