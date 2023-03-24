@@ -3,6 +3,8 @@
  * _isupper - check uppercase
  *
  * @c: for chech in ASCII
+ *
+ * Return: 1 if upper else 0
 */
 
 int _isupper(int c)
