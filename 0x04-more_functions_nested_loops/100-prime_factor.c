@@ -21,7 +21,7 @@ double _sqrt(double x)
 		tmp = sqrt;
 		sqrt = (x / tmp + tmp) / 2;
 	}
-	return(sqrt);
+	return (sqrt);
 }
 
 /**
