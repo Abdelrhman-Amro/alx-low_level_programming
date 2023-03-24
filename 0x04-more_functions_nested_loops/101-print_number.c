@@ -12,26 +12,25 @@ void print_number(int n)
 
 	x = n, cnt = 1;
 
-	if (n < 0)
-	{
-		x = -n;
-	}
-	else
-		x = n;
-
-	while (x > 9)
+	while (x > 9 || x < -9)
 	{
 		cnt *= 10;
 		x /= 10;
 	}
 
-	if (n < 0)
+	x = n;
+	if (x == -2147483648)
 	{
 		_putchar('-');
-		x = -n;
+		_putchar('2');
+		x = 147483648;
+		cnt /= 10;
 	}
-	else
-		x = n;
+	if (x < 0)
+	{
+		putchar('-');
+		cnt = -cnt;
+	}
 
 	while (cnt != 0)
 	{
