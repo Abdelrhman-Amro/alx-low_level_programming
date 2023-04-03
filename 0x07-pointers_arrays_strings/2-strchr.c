@@ -2,7 +2,7 @@
 
 /**
  * *_strchr - find first char and return its address
- * @s: first address
+ * @s: Pointer point to first address
  * @c: char to check
  * Return: first occurrence
 */
