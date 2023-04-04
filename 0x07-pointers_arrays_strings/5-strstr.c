@@ -1,6 +1,8 @@
 #include "main.h"
 
 /**
+ *_strstr - function
+ *
  *@haystack: Original string
  *
  *@needle: sub string
@@ -19,7 +21,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			j++;
 			if (needle[j] == '\0')
-				return (haystack + (i - j + 1));
+				return (needle);
 		}
 		else
 			j = 0;
