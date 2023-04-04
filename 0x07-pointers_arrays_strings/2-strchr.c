@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strchr - find first char and return its address
- * @s: pointer point to first address
- * @c: char to check
- * Return: first occurrence
+ *_strchr - find first char and return its address
+ *@s: pointer point to first address
+ *@c: char to check
+ *Rern: first occurrence
 */
 
 char *_strchr(char *s, char c)
