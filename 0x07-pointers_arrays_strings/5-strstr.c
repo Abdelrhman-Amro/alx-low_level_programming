@@ -1,8 +1,6 @@
 #include "main.h"
 
 /**
- *_strstr - function return pointer
- *
  *@haystack: Original string
  *
  *@needle: sub string
