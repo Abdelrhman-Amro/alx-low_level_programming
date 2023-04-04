@@ -1,10 +1,13 @@
 #include "main.h"
 
 /**
- *_strstr - function
- *@haystack: Original
- *@needle: substr
- *Return: pointer
+ *_strstr - function return pointer
+ *
+ *@haystack: Original string
+ *
+ *@needle: sub string
+ *
+ *Return: pointer Or NULL
 */
 
 char *_strstr(char *haystack, char *needle)
