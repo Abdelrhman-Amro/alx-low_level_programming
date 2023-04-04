@@ -4,7 +4,7 @@
  *_strchr - find first char and return its address
  *@s: pointer point to first address
  *@c: char to check
- *Rern: first occurrence
+ *Return: first occurrence
 */
 
 char *_strchr(char *s, char c)
