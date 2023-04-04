@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strchr - find first char and return its address
+ * _strchr - find first char and return its address
  * @s: pointer point to first address
  * @c: char to check
  * Return: first occurrence
