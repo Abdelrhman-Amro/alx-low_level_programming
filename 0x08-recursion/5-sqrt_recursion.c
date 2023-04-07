@@ -14,7 +14,7 @@ int SQR(int n, int val)
 	else if (val * val < n)
 		return (val + 1);
 	else
-		retutn (-1);
+		return (-1);
 }
 
 /**
@@ -25,5 +25,5 @@ int SQR(int n, int val)
 
 int _sqrt_recursion(int n)
 {
-	return (SQR(n, 1);
+	return (SQR(n, 1));
 }
