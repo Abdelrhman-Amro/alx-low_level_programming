@@ -15,7 +15,7 @@ int main(void)
 	for (i = 5; i <= 1024; i += 5)
 		sum += i;
 	for (i = 15; i <= 1024; i += 15)
-		sum -= 15;
+		sum -= i;
 	printf("%d\n", sum);
 
 	return (0);
