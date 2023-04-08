@@ -7,11 +7,11 @@
 
 int main(void)
 {
-	int x, y, i;
-	unsigned long z;
+	unsigned long x, y, z;
+	int i;
 
 	x = 1, y = 2;
-	printf("%d, %d", x, y);
+	printf("%lu, %lu", x, y);
 	for (i = 48; i > 0; i--)
 	{
 		z = x + y;
