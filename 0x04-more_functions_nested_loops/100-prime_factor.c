@@ -5,12 +5,11 @@
  *@n: number
 */
 
-void largest_prime_factor(long long int n)
+void largest_prime_factor(long int n)
 {
-	long long int mx;
 	int i;
+	long int mx;
 
-	mx = n;
 	while (n % 2 == 0)
 	{
 		n /= 2;
@@ -27,7 +26,7 @@ void largest_prime_factor(long long int n)
 	}
 	if (n > 2)
 		mx = n;
-	printf("%lld\n", mx);
+	printf("%ld\n", mx);
 }
 
 /**
