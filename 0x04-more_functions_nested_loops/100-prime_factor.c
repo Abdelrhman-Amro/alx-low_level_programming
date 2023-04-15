@@ -1,68 +1,44 @@
 #include <stdio.h>
+#include <math.h>
+
 /**
- * _sqrt - find the square root
- *
- * Description: fine square root
- *
- * @x: input number
- *
- * Return: square root of x
+ *largest_prime_factor - function
+ *@n: number
+ *Return: largest_prime_factor
 */
 
-double _sqrt(double x)
+long long largest_prime_factor(long long n)
 {
-	float sqrt, tmp;
+	long long mx;
 
-	sqrt = x / 2;
-	tmp = 0;
-
-	while (sqrt != tmp)
+	mx = n;
+	while (n % 2 == 0)
 	{
-		tmp = sqrt;
-		sqrt = (x / tmp + tmp) / 2;
+		n /= 2;
+		mx = 2;
 	}
-	return (sqrt);
-}
 
-/**
- * larg_pr_fac - find largest prime factor
- *
- * Description: find largest prime factor
- *
- * @num: number to find
-*/
-
-void larg_pr_fac(long int num)
-{
-	int prmN, largest;
-
-	while (num % 2 == 0)
-		num = num / 2;
-	for (prmN = 3; prmN <= _sqrt(num); prmN += 2)
+	for (i = 3; i < sqrt(n); i += 2)
 	{
-		while (num % prmN == 0)
+		while (n % i == 0)
 		{
-			num /= prmN;
-			largest = prmN;
+			n /= i;
+			mx = i;
 		}
 	}
-
-	if (num > 2)
-		largest = num;
-	printf("%d\n", largest);
+	if (n > 2)
+		mx = n;
+	return (mx);
 }
 
 /**
- * main - enry point
- *
- * Desription: largest prime factor
- *
- * Return: Always 0
+ *main - function
+ *Return: 0
 */
 
 int main(void)
 {
-	larg_pr_fac(612852475143);
+	printf("%ll\n", largest_prime_factor(612852475143));
 
 	return (0);
 }
