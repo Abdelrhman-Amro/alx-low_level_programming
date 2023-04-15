@@ -3,10 +3,9 @@
 /**
  *largest_prime_factor - function
  *@n: number
- *Return: largest_prime_factor
 */
 
-long long int largest_prime_factor(long long int n)
+void largest_prime_factor(long long int n)
 {
 	long long int mx;
 	int i;
@@ -28,7 +27,7 @@ long long int largest_prime_factor(long long int n)
 	}
 	if (n > 2)
 		mx = n;
-	return (mx);
+	printf("%lld\n", mx);
 }
 
 /**
@@ -38,7 +37,7 @@ long long int largest_prime_factor(long long int n)
 
 int main(void)
 {
-	printf("%lld\n", largest_prime_factor(612852475143));
+	largest_prime_factor(612852475143);
 
 	return (0);
 }
