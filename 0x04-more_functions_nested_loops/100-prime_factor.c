@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  *largest_prime_factor - function
@@ -9,6 +9,7 @@
 long long largest_prime_factor(long long n)
 {
 	long long mx;
+	int i;
 
 	mx = n;
 	while (n % 2 == 0)
@@ -37,7 +38,7 @@ long long largest_prime_factor(long long n)
 
 int main(void)
 {
-	printf("%ll\n", largest_prime_factor(612852475143));
+	printf("%lld\n", largest_prime_factor(612852475143));
 
 	return (0);
 }
