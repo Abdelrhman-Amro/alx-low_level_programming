@@ -6,9 +6,9 @@
  *Return: largest_prime_factor
 */
 
-long long largest_prime_factor(long long n)
+long long int largest_prime_factor(long long int n)
 {
-	long long mx;
+	long long int mx;
 	int i;
 
 	mx = n;
