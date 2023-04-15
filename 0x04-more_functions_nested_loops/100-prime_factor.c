@@ -17,7 +17,7 @@ long long largest_prime_factor(long long n)
 		mx = 2;
 	}
 
-	for (i = 3; i < sqrt(n); i += 2)
+	for (i = 3; i < 782849; i += 2)
 	{
 		while (n % i == 0)
 		{
