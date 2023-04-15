@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 
 /**
  *largest_prime_factor - function
