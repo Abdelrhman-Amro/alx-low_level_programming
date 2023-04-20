@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * - function
- *@
- *Return:
+ *_atoi - function
+ *@s: string
+ *Return: n
 */
 
 int _atoi(char *s)
