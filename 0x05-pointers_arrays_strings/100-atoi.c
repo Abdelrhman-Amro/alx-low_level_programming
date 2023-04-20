@@ -19,13 +19,8 @@ int _atoi(char *s)
 	while (s[i] >= 48 && s[i] <= 57)
 	{
 		if (minus % 2)
-		{
-			n = -(s[i] - 48);
-			minus++;
-			i++;
-			continue;
-		}
-		n = n * d + (s[i] - 48);
+			n = n * d - (s[i] - 48);
+		
 		i++;
 	}
 
