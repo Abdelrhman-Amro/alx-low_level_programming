@@ -2,15 +2,15 @@
 
 /**
  *_memset - function
- *@*s: string
- *@b: char
- *@n: int
+ *@*s: stringgg
+ *@b: charrr
+ *@n: inttt
  *Return: pointer
 */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	unsigned int i;
 	char *res = s;
 
 	for (i = 0; i < n; i++)
