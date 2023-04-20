@@ -2,7 +2,7 @@
 
 /**
  *_memset - function
- *@*s: stringgg
+ *@s: stringgg
  *@b: charrr
  *@n: inttt
  *Return: pointer
