@@ -18,13 +18,14 @@ int _atoi(char *s)
 	}
 	while (s[i] >= 48 && s[i] <= 57)
 	{
-		if (s[i] == '-')
-			minus++;
+		if (minus % 2)
+		{
+			n = -(s[i] - 48);
+			minus++
+		}
 		n = n * d + (s[i] - 48);
 		i++;
 	}
 
-	if (minus % 2)
-		n *= -1;
 	return (n);
 }
