@@ -22,6 +22,8 @@ int _atoi(char *s)
 		{
 			n = -(s[i] - 48);
 			minus++;
+			i++;
+			continue;
 		}
 		n = n * d + (s[i] - 48);
 		i++;
