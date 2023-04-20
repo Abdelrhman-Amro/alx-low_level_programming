@@ -2,7 +2,7 @@
 
 /**
  *_memset - function
- *@s: string
+ *@*s: string
  *@b: char
  *@n: int
  *Return: pointer
