@@ -27,7 +27,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		Node = Node->next;
 		i++;
 	}
-	if (idx > i)
+	if (idx - 1 > i)
 	{
 		free(New);
 		return (NULL);
