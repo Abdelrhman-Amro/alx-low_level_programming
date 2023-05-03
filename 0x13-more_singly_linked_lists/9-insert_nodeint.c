@@ -24,11 +24,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	if (i + 1 < idx)
 		return (NULL);
-	New = malloc(sizeof(lists.h));
+	New = malloc(sizeof(lists_t));
 	if (!New)
 		return (NULL);
 	New->n = n;
 	New->next = prv->next;
+	if (prv == NULL)
+	{
+		prv = New;
+		return (New);
+	}
 	prv->next = New;
 	return (New);
 }
