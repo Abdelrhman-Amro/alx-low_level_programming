@@ -1,1 +1,1 @@
-ra -rc liball.a *.cc
+ra -rc liball.a *.c
