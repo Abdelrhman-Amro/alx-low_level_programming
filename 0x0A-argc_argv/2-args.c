@@ -1,3 +1,11 @@
+#include "main.h"
+/**
+ * main - function
+ * @argc: number
+ * @argv: string
+ * Return: 0
+*/
+
 int main(int argc, char *argv[])
 {
 	int i;
