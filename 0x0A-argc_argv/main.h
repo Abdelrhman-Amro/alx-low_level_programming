@@ -4,5 +4,6 @@
 #include <stdio.h>
 
 int _putchar(char c);
+char STI(char *S);
 
 #endif
