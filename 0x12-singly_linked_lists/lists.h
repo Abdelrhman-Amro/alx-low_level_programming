@@ -18,27 +18,6 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
-/**
- * _strdup - duplicate string
- * @S: String
- * Return: pointer of new string
-*/
-
-char *_strdup(const char *S)
-{
-	int len = 0, i = 0;
-	char *NewS;
-
-	while (S[len] != '\0')
-		len++;
-
-	NewS = malloc(len * sizeof(char));
-	while (i++ < len)
-		NewS[i] = S[i];
-
-	return (NewS);
-}
-
 int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
