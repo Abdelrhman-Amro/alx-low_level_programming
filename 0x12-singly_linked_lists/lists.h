@@ -36,7 +36,7 @@ char *_strdup(const char *S)
 	if (NewS == NULL)
 		return (NULL);
 
-	while (i++ != len)
+	while (i++ < len)
 		NewS[i] = S[i];
 
 	return (NewS);
