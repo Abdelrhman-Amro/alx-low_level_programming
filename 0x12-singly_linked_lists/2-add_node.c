@@ -18,8 +18,11 @@ list_t *add_node(list_t **head, const char *str)
 		L++;
 
 	New->len = L;
-	while (i++ < L)
+	while (i < L)
+	{
 		New->str[i] = str[i];
+		i++;
+	}
 	New->next = *head;
 	*head = New;
 
