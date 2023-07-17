@@ -12,7 +12,7 @@ list_t *add_node(list_t **head, const char *str)
 	unsigned int i = 0;
 
 	new->str = str;
-	new->next = NULL;
+	new->next = *head;
 	while (*str != '\0')
 	{
 		i++;
