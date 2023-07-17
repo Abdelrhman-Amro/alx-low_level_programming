@@ -33,9 +33,6 @@ char *_strdup(const char *S)
 		len++;
 
 	NewS = malloc(len * sizeof(char));
-	if (NewS == NULL)
-		return (NULL);
-
 	while (i++ < len)
 		NewS[i] = S[i];
 
