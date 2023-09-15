@@ -6,7 +6,7 @@
 */
 void print_number(int n)
 {
-	int power , i, x;
+	int power, i, x;
 
 	power = 1;
 	for (i = 0; (n / power > 9) || (n / power < -9); i++)
