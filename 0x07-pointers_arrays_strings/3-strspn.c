@@ -6,20 +6,20 @@
  *@accept: substring
  *Return: number of bytes
 */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	int cnt, i, j;
+	int cnt, i, j, flag;
 
-	cnt = 0;
-	for (i = 0; s[i] != '\0'; i++)
+	cnt = 0, flag = 1;
+	for (i = 0; s[i] != '\0' && flag; i++)
 	{
-
+		flag = 0;
 		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
 			{
 				cnt++;
+				flag = 1;
 				break;
 			}
 		}
