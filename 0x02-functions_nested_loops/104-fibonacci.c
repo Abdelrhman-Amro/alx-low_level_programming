@@ -30,14 +30,13 @@ int main(void)
 	int i;
 
 	x = 1, y = 2;
-	printf("%d, %d", x, y);
+	printf("%ld, %ld", x, y);
 	for (i = 2; i < 98; i++)
 	{
 		z = x + y;
-		printf(", %l", z);
+		printf("[%d] = %ld\n", i, z);
 		x = y;
 		y = z;
-
 	}
 	return (0);
 }

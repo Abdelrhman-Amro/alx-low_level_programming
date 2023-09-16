@@ -4,7 +4,6 @@
  *largest_prime_factor - function
  *@n: number
 */
-
 void largest_prime_factor(long int n)
 {
 	int i;
