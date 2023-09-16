@@ -2,42 +2,39 @@
 
 /**
  * cap_string - Capitalize
- * @str: STRING
+ * @s: STRING
  * Return: new string
 */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	char *sp = " \t\n,;.!?(){}\"";
-	int i , j;
+	int i, j;
 
-	if (str[0] >= 'a' && str[0] <= 'z')
-		str[0] -= 32;
-		
-	for (i = 0; str[i] != '\0'; i++) /*loop on the string*/
+	if (s[0] >= 'a' && s[0] <= 'z')
+		s[0] -= 32;
+
+	for (i = 0; s[i] != '\0'; i++) /*loop on the string*/
 	{
-		if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) /*check if letter*/
-			continue;
-		else
+		for (j = 0; sp[j] != '\0'; j++) /*loop on sperators*/
 		{
-			for (j = 0; sp[j] != '\0'; j++) /*loop on sperators*/
+			if (sp[j] == s[i]) /*check if sperator equal str*/
 			{
-				if (sp[j] == str[i]) /*check if sperator equal str*/
+				i++;
+				while (s[i] != '\0')
 				{
-					i++;
-					while (str[i] != '\0' && (str[i] < 'A' || str[i] > 'Z') && (str[i] < '0' || str[i] > '9'))
+					if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= '1' && s[i] <= '9'))
+						break;
+					if (s[i] >= 'a' && s[i] <= 'z')
 					{
-						if (str[i] >= 'a' && str[i] <= 'z')
-						{
-							str[i] -= 32;
-							break;
-						}
-						i++;
+						s[i] -= 32;
+						break;
 					}
-					break;
+				i++;
 				}
+				break;
 			}
-
 		}
+
 	}
-	return (str);
+	return (s);
 }
