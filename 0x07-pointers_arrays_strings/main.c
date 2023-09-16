@@ -3,7 +3,7 @@
 int main ()
 {
     char main_string[50] = "Hello, how's the weather today?";
-    char search_string[30] = "weather";
+    char search_string[30] = "";
     
     char *found_string = _strstr(main_string, search_string);
     
