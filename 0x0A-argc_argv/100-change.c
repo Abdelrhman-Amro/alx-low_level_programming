@@ -8,7 +8,7 @@
  **/
 int main(int argc, char **argv)
 {
-	int cents[] = {1, 2, 5, 10, 20};
+	int cents[] = {1, 2, 5, 10, 25};
 	int money, cnt = 0, i;
 
 	if (argc != 2)
