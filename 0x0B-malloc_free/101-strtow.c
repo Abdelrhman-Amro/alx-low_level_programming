@@ -83,6 +83,8 @@ char **strtow(char *str)
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	wcnt = w_cnt(str);
+	if (wcnt == 0)
+		return (NULL);
 	arr = malloc(sizeof(char *) * (wcnt + 1));
 	if (arr == NULL)
 		return (NULL);
