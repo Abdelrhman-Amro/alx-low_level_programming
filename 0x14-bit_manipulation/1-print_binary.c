@@ -14,10 +14,10 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	while(i < nbits)
+	while (i < nbits)
 	{
 		bit = ((n & (shift << (nbits - 1))) != 0);
-		if(bit || flag)
+		if (bit || flag)
 		{
 			_putchar(bit + '0');
 			flag = 1;
