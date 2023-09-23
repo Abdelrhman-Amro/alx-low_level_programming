@@ -24,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int dec = 0, pow = 1;
 	int len = str_len(b);
 
-	if (!b || b == '\0')
+	if (!b || *b == '\0')
 		return (0);
 	while (--len >= 0)
 	{
