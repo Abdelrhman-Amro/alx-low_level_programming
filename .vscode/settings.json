@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "function_pointers.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "3-calc.h": "c"
     }
 }
