@@ -1,18 +1,15 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - Prit all vars
- * @format:  list of types of arguments passed to the function
- * @...: Arguments
+ * PRINT - print vars
+ * @args: arguments
+ * @f: format
 */
-void print_all(const char * const format, ...)
+void PRINT(va_list args, const char * const f)
 {
-	va_list args;
 	int i = 0, flag = 0;
-	const char * const f = format;
 	char *str;
 
-	va_start(args, format);
 	while (f[i])
 	{
 		if (flag)
@@ -31,12 +28,15 @@ void print_all(const char * const format, ...)
 			break;
 			case 's':
 			str = va_arg(args, char *);
-			if (str)
+			switch ((int) (!str))
 			{
+				case 1:
+				printf("(nil)");
+				break;
+				default:
 				printf("%s", str);
 				break;
 			}
-			printf("(nil)");
 			break;
 			default:
 			flag = 0;
@@ -44,5 +44,23 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
+}
+/**
+ * print_all - Prit all vars
+ * @format:  list of types of arguments passed to the function
+ * @...: Arguments
+*/
+void print_all(const char * const format, ...)
+{
+	va_list args;
+
+	if (!format)
+	{
+		printf("\n");
+		exit(0);
+	}
+	va_start(args, format);
+	PRINT(args, format);
 	printf("\n");
+	va_end(args);
 }
