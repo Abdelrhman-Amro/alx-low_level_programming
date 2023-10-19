@@ -1,0 +1,12 @@
+function my_strlen(char *s)
+
+if filename == null return -1
+
+open - TRUNC | CREATE | write - S_IRUSR | S_IWUSR 
+    //check open error
+if !txt
+    len = my_strlen
+    write
+        //check write error
+close
+    //check close error
