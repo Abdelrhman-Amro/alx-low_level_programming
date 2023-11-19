@@ -8,12 +8,9 @@
 */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *node;
+	dlistint_t *node = *head;
 	unsigned int select = 0;
 
-	if (head == NULL)
-		return (-1);
-	node = *head;
 	while (node && select < index)
 	{
 		node = node->next;
@@ -21,10 +18,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	if (node == NULL || select < index)
 		return (-1);
-
 	if (index != 0)
 		node->prev->next = node->next;
-	if (index == 0 && node->next != NULL)
+	if (node->next != NULL)
 		node->next->prev = node->prev;
 	if (index == 0)
 		*head = node->next;
