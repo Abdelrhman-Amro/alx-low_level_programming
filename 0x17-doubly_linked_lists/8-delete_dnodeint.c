@@ -8,9 +8,12 @@
 */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *node = *head;
+	dlistint_t *node;
 	unsigned int select = 0;
 
+	if (head == NULL)
+		return (-1);
+	node = *head;
 	while (node && select < index)
 	{
 		node = node->next;
