@@ -20,9 +20,7 @@ int main(void)
     add_dnodeint_end(&head, 1024);
     print_dlistint(head);
     printf("-----------------\n");
-    insert_dnodeint_at_index(&head, 0, 11111111);
     insert_dnodeint_at_index(&head, 5, 4096);
-    insert_dnodeint_at_index(&head, 8, 8888888);
     print_dlistint(head);
     free_dlistint(head);
     head = NULL;

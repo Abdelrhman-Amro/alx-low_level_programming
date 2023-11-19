@@ -21,16 +21,16 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	/****************find node idx*******************/
 	node_idx = *h;
-	while (node_idx && idx)
+	while (node_idx->next && idx)
 	{
 		node_idx = node_idx->next;
 		idx--;
 	}
-	if (idx != 0)
+	if (idx > 1)
 		return (NULL);
 
 	/*********************check if add at the end***********************/
-	if (node_idx->next == NULL)
+	if (node_idx->next == NULL && idx)
 		return (add_dnodeint_end(h, n));
 
 	/********************add node in the middle***********************/
