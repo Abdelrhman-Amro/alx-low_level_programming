@@ -16,12 +16,16 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		node = node->next;
 		select++;
 	}
+	/*****Check if indext out of range or head == NULL*****/
 	if (node == NULL || select < index)
 		return (-1);
+	/*****If index at the end or in the middle*****/
 	if (index != 0)
 		node->prev->next = node->next;
+	/*****if the index in the beginning or in the middle*****/
 	if (node->next != NULL)
 		node->next->prev = node->prev;
+	/*****if the index in the beginning*****/
 	if (index == 0)
 		*head = node->next;
 	free(node);
