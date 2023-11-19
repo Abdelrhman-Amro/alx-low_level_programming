@@ -31,7 +31,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	/*********************check if add at the end***********************/
 	if (node_idx->next == NULL)
-		return (add_dnodeint_end(&node_idx, n));
+		return (add_dnodeint_end(h, n));
 
 	/********************add node in the middle***********************/
 	node->n = n;
