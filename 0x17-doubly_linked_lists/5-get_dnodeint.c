@@ -6,4 +6,14 @@
  * @index: index of the node, starting from 0
  * Return: node at the index and if not exist, return NULL
 */
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+{
+	while (head && index)
+	{
+		head = head->next;
+		index--;
+	}
+	if (index != 0)
+		return (NULL);
+	return (head);
+}
