@@ -15,8 +15,6 @@ hash_node_t *creat_item(const char *key, const char *value)
 		return (0);
 	item->key = strdup(key);
 	item->value = strdup(value);
-	if (!item->key || !item->value)
-		return (0);
 	return (item);
 }
 
