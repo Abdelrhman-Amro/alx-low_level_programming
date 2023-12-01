@@ -1,0 +1,20 @@
+unsigned long int idx;
+int k_existed = 0;
+hash_node_t *item;
+char *value;
+///////////
+Handle -> ht == NULL
+idx = find index
+item = ht->array[idx]
+k_existed = 0
+
+if item == NULL
+    return NULL
+elif item->k == key
+        return item->value
+elif item->k != key
+        search for key
+    check if key existed
+        return item->value
+    else
+        return NULL
